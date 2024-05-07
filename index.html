@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Modak&family=Roboto+Mono:ital,wght@0,281;1,281&family=Teko:wght@300..700&family=VT323&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="left-container">
+        <img
+          class="cat-image"
+          src="images/cuteCat.jpg"
+          alt="Cute cat inside a carton box"
+        />
+        <div class="text-on-image">
+              FREE CARTON BOX
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="lorem-container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            reprehenderit? Non ea, error consectetur pariatur recusandae modi
+            cumque molestias minima provident harum? Obcaecati voluptas nisi
+            eligendi laudantium harum? Veniam, quia.
+          </p>
+          <p>You know your cat wants it</p>
+        </div>
+        <div class="form-container">
+          <form action="" method="get" id="myform">
+            <!-- <button type="submit"></button> -->
+            <div class="first-name">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" 
+              minlength="2"
+              placeholder="Cute" required />
+            </div>
+            <div class="last-name">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" placeholder="Cat" required />
+            </div>
+            <div class="email">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" placeholder="email@email.com" />
+            </div>
+            <div class="phone-number">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" id="phone-number" />
+            </div>
+            <div class="password">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" minlength="6" required />
+            </div>
+            <div class="confirm-password">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input type="password" id="confirm-password" required />
+                <p class="password-dif hidden">* The passwords are not equal</p>
+            </div>
+          </form>
+        </div>
+        <div class="button-container">
+          <button type="submit" form="myform" class="btn-create">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
